@@ -88,7 +88,8 @@ resource "aws_iam_policy" "lb_controller" {
           "elasticloadbalancing:CreateListener",
           "elasticloadbalancing:DeleteListener",
           "elasticloadbalancing:CreateRule",
-          "elasticloadbalancing:DeleteRule"
+          "elasticloadbalancing:DeleteRule",
+          "elasticloadbalancing:ModifyRule"
         ]
         Resource = "*"
       },
